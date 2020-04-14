@@ -10,7 +10,7 @@ class Navbar extends React.Component {
     return (
       <Container>
         <Links>
-          <Link className="without-border">
+          <Link href="/" className="without-border first">
             <img src={Icon} alt="icon" />
           </Link>
         </Links>
@@ -20,7 +20,7 @@ class Navbar extends React.Component {
           <Link>Experiences</Link>
           <Link>Project</Link>
           <Link>Organizations</Link>
-          <Link>About</Link>
+          <Link className="last">About</Link>
         </Links>
       </Container>
     );
@@ -85,6 +85,24 @@ const Container = styled.div`
     object-fit: scale-down;
     cursor: pointer;
     margin 10px 10px;
+  }
+
+  .first {
+    margin-left: 5em;
+  }
+
+  .last {
+    margin-right: 5em;
+  }
+
+  @media screen and (max-width: 520px) {
+    .first {
+      margin-left: 1em;
+    }
+  
+    .last {
+      margin-right: 1em;
+    }
   }
 `;
 
