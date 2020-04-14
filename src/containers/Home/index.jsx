@@ -10,12 +10,3 @@ class Home extends Component {
 }
 
 export default Home;
-
-const Container = styled.div`
-  height: 90vh;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;

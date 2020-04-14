@@ -1,16 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Routes from "./containers/index";
-import "./css/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Test</h1>
+    <Main>
       <Navbar />
       <Routes />
-    </div>
+    </Main>
   );
 }
+
+const Main = styled.div`
+  aling-item: center;
+`;
 
 export default App;

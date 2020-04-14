@@ -48,21 +48,21 @@ class HomeComponent extends React.Component {
           </span>
         </TextLoop>
         <Contact>
-          <Link href={linkedIn}>
+          <a href={linkedIn} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" />
-          </Link>
-          <Link href={twitter}>
+          </a>
+          <a href={twitter} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={["fab", "twitter-square"]} size="lg" />
-          </Link>
-          <Link href={ig}>
+          </a>
+          <a href={ig} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={["fab", "instagram"]} size="lg" />
-          </Link>
-          <Link href={github}>
+          </a>
+          <a href={github} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={["fab", "github"]} size="lg" />
-          </Link>
-          <Link href={mail}>
+          </a>
+          <a href={mail} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope} size="lg" />
-          </Link>
+          </a>
         </Contact>
       </Container>
     );
@@ -70,7 +70,7 @@ class HomeComponent extends React.Component {
 }
 
 const Container = styled.div`
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +84,7 @@ const Container = styled.div`
   }
 
   .loop {
-    font-size: 1em;
+    font-size: 1.3em;
     margin-top: 1em;
   }
 
@@ -92,6 +92,10 @@ const Container = styled.div`
     img {
       width: 150px;
       height: 150px;
+    }
+
+    .loop {
+      font-size: 1.1em;
     }
   }
 `;
@@ -111,6 +115,8 @@ const Desc = styled.div`
   font-size: 1.25em;
   width: 50%;
   margin: 1em;
+  text-align: center;
+  font-weight: lighter;
 
   @media screen and (max-width: 520px) {
     font-size: 1em;
